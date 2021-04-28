@@ -15,22 +15,59 @@
   
 
     <!-- buttons for chatrooms -->
-    <div class="chat-rooms mb-3 text-center">
+    <div class="chat-rooms text-center">
         <div class="my-2">Join a chatroom:</div>
         <button class="btn" id="general">#general</button>
-        <button class="btn" id="frontend">#frontend</button>
-        <button class="btn" id="backend">#backend</button>
-        <button class="btn" id="iosdevelopment">#iosdevelopment</button>
-        <button class="btn" id="androiddevelopment">#androiddevelopment</button>
+        <button class="btn" id="frontend">#frontenddept</button>
+        <button class="btn" id="backend">#backenddept</button>
+        <button class="btn" id="iosdevelopment">#coffeebreak</button>
+        <button class="btn" id="androiddevelopment">#social</button>
     </div>
 
     <!-- chat list / window -->
+    <div class="chat-window">
+        <ul class="chat-list list-group"></ul>
+    </div>
 
     <!-- new chat form -->
+    <form class="new-chat my-3">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text">Your message:</div>
+            </div>
+            <input type="text" id="message" class="form-control" required>
+            <div class="input-group-append">
+                <input type="submit" class="btn" value="send">
+            </div>
+        </div>
+    </form>
 
     <!-- update name form -->
+    <form class="new-name my-3">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text">Update name:</div>
+            </div>
+            <input type="text" id="name" class="form-control" required>
+            <div class="input-group-append">
+                <input type="submit" class="btn" value="update">
+            </div>
+        </div>
+        <div class="update-mssg"></div>
+    </form>
 </div>
+
     <script src="app.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyDOCAbC123dEf456GhI789jKl01-MnO",
+            authDomain: "myapp-project-123.firebaseapp.com",
+            databaseURL: "https://myapp-project-123.firebaseio.com",
+            projectId: "myapp-project-123",
+            storageBucket: "myapp-project-123.appspot.com",
+            messagingSenderId: "65211879809",
+        };
+    </script>
     <script src="chatroom.js"></script>
     <script src="ui.js"></script>
 </body>

@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Georgia';
+}
+
+.btn {
+    background: #03cfd3;
+    color: white;
+}
+
+.btn:focus {
+
+}
