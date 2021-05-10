@@ -21,12 +21,26 @@ class Chatroom {
         const response = await this.chats.add(chat)
         return response;
     }
+    getChats(callback){
+        this.chats.onSnapshot(snapshots => {
+            snapshots.docChanges().forEach(change => {
+            if(change.type === 'added'){
+                // update the ui
+                    callback(change.doc.data())
+                }
+            })
+        });
+    }
 }
 
 
 const chatroom = new Chatroom('general', 'pat');
 // console.log(chatroom)
 
-chatroom.newChat('Hey')
-.then(() => console.log('chat added'))
-.catch(err => console.log(err));
+// chatroom.newChat('Hey')
+// .then(() => console.log('chat added'))
+// .catch(err => console.log(err));
+
+chatroom.getChats((data) => {
+    console.log(data);
+})
