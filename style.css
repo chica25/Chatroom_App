@@ -3,15 +3,17 @@
     margin: 0;
 }
 
+.container {
+    max-width: 600px;
+}
+
 body {
     font-family: 'Georgia';
 }
 
 .btn {
-    background: #03cfd3;
-    color: white;
+    background-color: #03cfd3;
+    color: black;
+    border: solid black 1px;
 }
 
-.btn:focus {
-
-}

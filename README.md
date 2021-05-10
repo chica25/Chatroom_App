@@ -1,0 +1,1 @@
+Part of the 100 Days Code challenge - A Chatroom app built in Vanilla JavaScript

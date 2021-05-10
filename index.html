@@ -57,17 +57,27 @@
     </form>
 </div>
 
-    <script src="app.js"></script>
+   
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
+   
     <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
         var firebaseConfig = {
-            apiKey: "AIzaSyDOCAbC123dEf456GhI789jKl01-MnO",
-            authDomain: "myapp-project-123.firebaseapp.com",
-            databaseURL: "https://myapp-project-123.firebaseio.com",
-            projectId: "myapp-project-123",
-            storageBucket: "myapp-project-123.appspot.com",
-            messagingSenderId: "65211879809",
+            apiKey: "AIzaSyD5BhBiLklV9roL0tUIRJ8HGn_g-tIhugU",
+            authDomain: "chatroom-app-27145.firebaseapp.com",
+            projectId: "chatroom-app-27145",
+            storageBucket: "chatroom-app-27145.appspot.com",
+            messagingSenderId: "646143091631",
+            appId: "1:646143091631:web:436f615540227a234d455a",
+            measurementId: "G-FT1YHKXV15"
         };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore(); 
     </script>
+     <script src="app.js"></script>
     <script src="chatroom.js"></script>
     <script src="ui.js"></script>
 </body>
