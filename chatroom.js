@@ -6,7 +6,10 @@
 class Chatroom {
     constructor(room, username) {
         this.room = room;
-        this.username;
+        this.username = username;
         this.chats = db.collection('chat');
     }
 }
+
+const chatroom = new Chatroom('general', 'pat');
+console.log(chatroom)
